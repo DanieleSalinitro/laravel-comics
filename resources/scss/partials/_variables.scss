@@ -1,1 +1,17 @@
-$text-color: red;
+
+@mixin reset{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+@mixin db-container{
+    max-width: 80%;
+    margin: 0 auto;
+}
+$darkest: #0e0e0e;
+$dark: #1c1c1c;
+$darkless: #303030;
+$light: #ffffff;
+$secondary: #797979;
+$accenture: #0282f9;

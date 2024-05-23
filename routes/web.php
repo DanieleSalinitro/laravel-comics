@@ -14,5 +14,13 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('home');
-});
+    $comics = config('db.comics');
+    $headerOptions = config('db.headerOptions');
+    $footerMenu = config('db.footerMenu');
+    return view('home', compact('comics','headerOptions','footerMenu'));
+})->name('home');
+
+
+Route::get('/about', function () {
+    return view('about');
+})->name('about');
